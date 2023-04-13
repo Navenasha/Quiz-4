@@ -1,0 +1,27 @@
+GET http://localhost:3000
+
+###
+
+POST http://localhost:3000/login
+content-type: application/json
+
+{
+    "username": "nave",
+    "password": "123456"
+}
+
+###
+
+GET http://localhost:3000/bye
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5hdmUiLCJwYXNzd29yZCI6IjEyMzQ1NiIsIm5hbWUiOiJOYXZlIiwiZW1haWwiOiJuYXZlQHN0dWRlbnQudXRlbS5lZHUubXkiLCJpYXQiOjE2ODEzNzE2MTB9.5qJG4nld3WBIwDixCUDQCR5z4ZTmxJsL_r5i-WE1UeI
+###
+
+POST http://localhost:3000/register
+content-type: application/json
+
+{
+    "username": "nave",
+    "password": "123456",
+    "name": "Nave",
+    "email": "b022120011@student.utem.edu.my"
+}
